@@ -49,7 +49,7 @@ private:
                              << " " << msg->pose.pose.orientation.x << " " << msg->pose.pose.orientation.y << " " << msg->pose.pose.orientation.z << " " << msg->pose.pose.orientation.w
                             << std::endl;
     
-    RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->child_frame_id.c_str());
+    // RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->child_frame_id.c_str());
   }
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscription_;
   Odom_Data odom_;
